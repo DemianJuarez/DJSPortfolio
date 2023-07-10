@@ -3,6 +3,56 @@
     margin: 0;
 }
 
-h1 {
-    color: blue;
+body {
+    background-color: lightgray;
+    font-family: copperPlate;
 }
+
+header {
+    background-color: gray;
+}
+
+.navBar {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+}
+
+.ulNav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+    font-size: 1.5em;
+}
+
+.ulNav li {
+    list-style-type: none;
+}
+
+.navHome {
+    padding-right: 35px;
+}
+
+.navAbout {
+    padding-right: 35px;
+}
+
+.navSkill {
+    padding-right: 35px ;
+}
+
+.navContact {
+    padding-left: 35px;
+}
+
+.pageLogo {
+    width: 100px;
+    height: auto;
+    margin-left: 35px;
+}
+
