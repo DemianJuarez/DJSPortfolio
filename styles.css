@@ -10,12 +10,9 @@ body {
     font-family: copperPlate;
 }
 
-header {
-    background-color: gray;
-}
-
 .navBar {
-    position: sticky;
+    width: 100%;
+    background-color: gray;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -55,20 +52,120 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 70px;
-    margin-left: 150px;
+    justify-content: center;
     padding-bottom: 20px;
 }
 
 .title p {
-    padding-top: 48px;
+    padding-top: 38px;
     font-size: 2em;
 }
 
 .demianPic {
+    float: inherit;
     width: 400px;
     height: auto;
-    float: right;
-    margin-right: 150px;
     border-radius: 2em;
 }
 
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(205, 148, 205);
+}
+
+.commentPic {
+    font-size: 1.5em;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(155, 148, 205);
+    padding-top: 35px;
+}
+
+.aboutSection h2 {
+    font-size: 4em;
+}
+
+.aboutSection p {
+    padding-top: 35px;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.skillSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    background-color: rgb(205, 148, 148);
+}
+
+.skillSection h2 {
+    font-size: 4em;
+}
+
+.intermediateLanguages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.basicLanguages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.languageIcon {
+    width: 70px;
+    height: auto;
+}
+
+.skillSection h3 {
+    font-size: 1.7em;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.cIcon {
+    width: 62px;
+}
+
+.portfolioSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    background-color: rgb(148, 205, 181);
+}
+
+.portfolioSection h2 {
+    font-size: 4em;
+}
+
+
+/** 
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px)
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px)
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px)
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px)
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px)
+**/
