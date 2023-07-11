@@ -55,14 +55,20 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 70px;
+    margin-left: 150px;
+    padding-bottom: 20px;
 }
 
 .title p {
-    padding-top: 50px;
+    padding-top: 48px;
+    font-size: 2em;
 }
 
 .demianPic {
-    display: flex;
-    width: 300px;
+    width: 400px;
     height: auto;
+    float: right;
+    margin-right: 150px;
+    border-radius: 2em;
 }
+
