@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
     height: auto;
     border-radius: 2em;
 }
+
 
 .homeSection {
     display: flex;
@@ -221,7 +223,7 @@ body {
 }
 
 button {
-
+    border-radius: 1em;
 }
 
 /** 
