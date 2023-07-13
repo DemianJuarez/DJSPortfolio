@@ -38,10 +38,24 @@ body {
 .ulNav li {
     list-style-type: none;
     padding-right: 35px;
+    transition: transform 0.3s;
 }
 
 .ulNav li:last-child {
     padding-right: 0;
+}
+
+.ulNav a {
+    text-decoration: none;
+    color: black;
+}
+
+.ulNav li:hover {
+    transform: scale(1.2);
+}
+
+.ulNav a:hover {
+    color: darkgray;
 }
 
 .textDJS {
@@ -72,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(205, 148, 205);
+    background-image: linear-gradient(to bottom, rgb(205, 148, 205), rgb(155, 148, 205));
 }
 
 .commentPic {
@@ -83,7 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(155, 148, 205);
+    background-image: linear-gradient(to bottom, rgb(155, 148, 205), rgb(205, 148, 148));
     padding-top: 35px;
 }
 
@@ -106,7 +120,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 35px;
-    background-color: rgb(205, 148, 148);
+    background-image: linear-gradient(to bottom, rgb(205, 148, 148), rgb(148, 205, 181)); 
 }
 
 .skillSection h2 {
@@ -117,6 +131,17 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.lan1 {
+    display: flex;
+    column-gap: 20px;
+}
+
+.lan2 {
+    display: flex;
+    column-gap: 20px;
 }
 
 .basicLanguages {
@@ -128,6 +153,11 @@ body {
 .languageIcon {
     width: 70px;
     height: auto;
+    transition: transform 0.3s;
+}
+
+.languageIcon:hover {
+    transform: scale(1.2);
 }
 
 .skillSection h3 {
@@ -138,6 +168,12 @@ body {
 
 .cIcon {
     width: 62px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.cIcon:hover {
+    transform: scale(1.2);
 }
 
 .portfolioSection {
@@ -145,7 +181,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 35px;
-    background-color: rgb(148, 205, 181);
+    background-image: linear-gradient(to bottom, rgb(148, 205, 181), rgb(195, 205, 148));
 }
 
 .portfolioSection h2 {
@@ -180,6 +216,12 @@ body {
 .contactForm {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+button {
+
 }
 
 /** 
