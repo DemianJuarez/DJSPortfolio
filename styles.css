@@ -2,30 +2,75 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: copperPlate;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: lightgray;
-    font-family: copperPlate;
+}
+
+.showMenu,
+.hideMenu {
+    display: block;
+    font-size: 2.5em;
+    cursor: pointer;
 }
 
 .navBar {
     width: 100%;
+    height: 100px;
     background-color: gray;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    margin-right: 100px;
+}
+
+.showMenu {
+    margin-right: 35px;
 }
 
 .ulNav {
-    display: flex;
-    flex-direction: row;
-    margin-right: 35px;
-    font-size: 1.5em;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+}
+
+.ulNav li {
+    display: block;
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+.hideMenu{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .ulNav{
+    right: 0;
+}
+
+.ulNav li a {
+    color:black;
+    text-decoration: none;
+}
+
+.ulNav li a:hover {
+    color:lightgray;
 }
 
 .DJSLogo {
@@ -36,48 +81,25 @@ body {
     padding-bottom: 5px;
 }
 
-.ulNav li {
-    list-style-type: none;
-    padding-right: 35px;
-    transition: transform 0.3s;
-}
-
-.ulNav li:last-child {
-    padding-right: 0;
-}
-
-.ulNav a {
-    text-decoration: none;
-    color: black;
-}
-
-.ulNav li:hover {
-    transform: scale(1.2);
-}
-
-.ulNav a:hover {
-    color: darkgray;
-}
-
-.textDJS {
-    font-size: 5em;
-}
-
 .title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 70px;
     justify-content: center;
     padding-bottom: 20px;
 }
 
+.textDJS {
+    font-size: 7em;
+}
+
 .title p {
-    padding-top: 38px;
-    font-size: 2em;
+    font-size: 2.5em;
+    padding-left: 197px;
+    margin-top: -20px;
 }
 
 .demianPic {
-
     width: 400px;
     height: auto;
     border-radius: 2em;
@@ -92,7 +114,7 @@ body {
 }
 
 .commentPic {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .aboutSection {
@@ -104,36 +126,38 @@ body {
 }
 
 .aboutSection h2 {
-    font-size: 4em;
+    font-size: 5.5em;
 }
 
 .aboutSection p {
     padding-top: 35px;
-    font-size: 1.3em;
+    font-size: 2em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-right: 60px;
     margin-left: 60px;
+    text-align: center;
+
 }
 
 .skillSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 70px;
     background-image: linear-gradient(to bottom, rgb(205, 148, 148), rgb(148, 205, 181)); 
 }
 
 .skillSection h2 {
-    font-size: 4em;
+    font-size: 5.5em;
 }
 
 .intermediateLanguages {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 30px;
+    row-gap: 80px;
 }
 
 .lan1 {
@@ -153,7 +177,7 @@ body {
 }
 
 .languageIcon {
-    width: 70px;
+    width: 100px;
     height: auto;
     transition: transform 0.3s;
 }
@@ -163,13 +187,13 @@ body {
 }
 
 .skillSection h3 {
-    font-size: 1.7em;
+    font-size: 3em;
     padding-top: 35px;
     padding-bottom: 35px;
 }
 
 .cIcon {
-    width: 62px;
+    width: 100px;
     height: auto;
     transition: transform 0.3s;
 }
@@ -182,16 +206,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 70px;
     background-image: linear-gradient(to bottom, rgb(148, 205, 181), rgb(195, 205, 148));
 }
 
 .portfolioSection h2 {
-    font-size: 4em;
+    font-size: 5.5em;
 }
 
 .portfolioIcons {
-    padding-top: 35px;
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,23 +231,104 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 70px;
     background-color: rgb(195, 205, 148);
 }
 
 .contactSection h2 {
-    font-size: 4em;
+    font-size: 5.5em;
 }
 
 .contactForm {
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 70px;
+    font-size: 3.5em;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    font-size: 1em;
+}
+
+textarea {
+    width: 500px;
+    height: 400px;
+    font-size: 1em;
 }
 
 button {
+    align-self: center;
     border-radius: 1em;
+    width: 300px;
+    height: 70px;
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 600px){
+    .textDJS {
+        font-size: 8em;
+    }
+    .title p {
+        font-size: 3em;
+        padding-left: 205px;
+        margin-top: -30px;
+    }
+    .demianPic {
+        width: 500px;
+    }
+    .commentPic {
+        font-size: 2.3em;
+    }
+    .aboutSection h2 {
+        font-size: 7em;
+    }
+    .aboutSection p {
+        font-size: 2.3em;
+    }
+    .skillSection h2 {
+        font-size: 7em;
+    }
+    .languageIcon {
+        width: 120px;
+    }
+    .cIcon {
+        width: 120px;
+    }
+    .skillSection h3 {
+        font-size: 3.5em;
+    }
+    .portfolioSection h2 {
+        font-size: 7em;
+    }
+    .contactSection h2 {
+        font-size: 6.9em;
+    }
+    input {
+        width: 550px;
+        height: 50px;
+        font-size: 1em;
+    }
+    
+    textarea {
+        width: 550px;
+        height: 400px;
+        font-size: 1em;
+    }
+    
+    button {
+        align-self: center;
+        border-radius: 1em;
+        width: 350px;
+        height: 70px;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px){
 }
 
 /** 
@@ -241,4 +346,47 @@ Large devices (laptops/desktops, 992px and up)
 
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px)
+**/
+
+/** 
+    .navBar {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ulNav{
+        display: flex;
+        gap: 50px;
+        font-size: 1.5em;
+        margin-right: 35px;
+        text-transform: uppercase;
+        transition: 0.4s;
+    }
+
+    .ulNav li{
+        list-style-type: none;
+    }
+
+    .ulNav li a {
+        text-decoration: none;
+    }
+
+
+    .showMenu,
+    .hideMenu {
+        cursor: pointer;
+        display: none;
+        transition: 0.4s;
+    }
+
+    .showMenu {
+        order:1;
+    }
+
+    #check{
+        display: none;
+    }
 **/
