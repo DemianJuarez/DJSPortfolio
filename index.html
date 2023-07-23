@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navBar">
+    <header class="header">
             <img
                 class="DJSLogo"  src="/src/DJSLogo.png" alt="DJSLogo"
             />
-            <input type="checkbox" id="check">
-            <label for="check" class="showMenu">
-                &#8801
-            </label>
+            <button class="button">
+                <img class="MenuLogo" src="/src/buttonMenu.svg"/>
+            </button>
+        <nav class="navBar">
             <ul class="ulNav">
                 <li class="navHome">
                     <a href="#homeSection">
@@ -42,14 +41,11 @@
                         Contact
                     </a>
                 </li>
-                <label for="check" class="hideMenu">
-                    &#215
-                </label>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="homeSection">
+        <section id='homeSection' class="homeSection">
             <div class="title">    
                 <h1 class="textDJS">
                     Demian JS
@@ -95,11 +91,14 @@
                 Basic
             </h3>
             <div class="basicLanguages">
-                <div class="lan1">
+                <div class="lan3">
                     <img class="cIcon" src="src/basicLanguages/cplusplusicon.svg" />
                     <img class="languageIcon" src="src/basicLanguages/csharpicon.svg" />
+                </div>
+                <div class="lan4">
                     <img class="languageIcon" src="src/basicLanguages/git-bashicon.svg" />
                     <img class="languageIcon" src="src/basicLanguages/githubicon.svg" />
+                </div>
             </div>
         </section>
         <section id="portfolioSection" class="portfolioSection">
@@ -134,14 +133,13 @@
                 </label>
                 <textarea id="message" rows="4" placeholder="How can i help you?" >
                 </textarea>
-                <button type="submit">
+                <button class="buttonForm" type="submit">
                     Submit
                 </button>
             </form>
         </section>
     </main>
-    <footer>
-    </footer>
+    <script defer src="script.js"></script>
 </body>
 </html>
 
